@@ -1,10 +1,6 @@
 from flask import Flask
 from extensions import db, login_manager
 
-import os
-port = int(os.environ.get("PORT", 5000))
-app.run(host="0.0.0.0", port=port)
-
 def create_app():
     app = Flask(__name__)
 
